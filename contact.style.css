@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+#MAIN {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.Logo {
+  width: 165px;
+  height: auto;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #b80a41;
+}
+
+/* Main Container for the form and help section */
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  gap: 190px;
+  background-color: #fff;
+}
+
+/* Form Section */
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b5b6ba;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.name-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.send-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2686b0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.send-button:hover {
+  background-color: #256a8a;
+}
+
+/* Help Section */
+.help-section {
+  padding-left: 20px;
+}
+
+.help-section h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.help-section > p {
+  color: #000000;
+  width: 483px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.help-topic {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.help-topic h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.help-topic p {
+  margin-top: 20px;
+  color: #484848;
+}
+
+.help-topic .arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #484848;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #1a2349;
+  color: #ecf0f1;
+  padding-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #4195ba;
+}
+
+.footer-column {
+  padding: 0 15px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-social {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  text-align: start;
+  align-items: start;
+}
+
+.footer-social a {
+  color: #ecf0f1;
+  margin-left: 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    margin: 50px auto;
+  }
+  .footer {
+    padding: 30px 12px 15px;
+    margin-top: 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+
+  .footer-column h4 {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-column ul li a {
+    font-size: 10px;
+  }
+
+  .footer-social {
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #4195ba;
+  }
+
+  .footer-social a {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+}
